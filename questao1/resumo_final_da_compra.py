@@ -16,3 +16,15 @@ def exibir_resumo(compras, cliente_fidelidade, idade_cliente):
     print(f"Percentual de Desconto: {percentual_desconto:.2f}%")
     print(f"Valor do Desconto: R$ {valor_desconto:.2f}")
     print(f"Valor Final: R$ {valor_final:.2f}")
+
+if __name__ == "__main__":
+    # Exemplo de uso da função
+    compras = [
+        ("Maçã", "fruta", 5.00),
+        ("Alface", "verdura", 3.50),
+        ("Arroz", "mercado", 10.00)
+    ]
+    cliente_fidelidade = True
+    idade_cliente = 65
+
+    exibir_resumo(compras, cliente_fidelidade, idade_cliente)
